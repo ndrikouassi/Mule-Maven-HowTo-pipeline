@@ -25,20 +25,20 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	<global-property doc:name="Global Property" name="api.https.port" value="8082" />
 	<global-property doc:name="Global Property" name="api.name" value="blog-e-test1" />
 	<global-property doc:name="Global Property" name="api.version" value="1.0.0" />
-	<global-property doc:name="Global Property" name="api.id" value="15958180" />
+	<global-property doc:name="Global Property" name="api.id" value="18740967" />
 
 	<global-property doc:name="Global Property" name="project.version" value="1.0.0" />
 
 	<global-property doc:name="Global Property" name="request.api.path" value="/v1" />
-	<global-property doc:name="Global Property" name="request.api.host" value=".com" />
+	<global-property doc:name="Global Property" name="request.api.host" value="mule-maven-howto-pipeline.cloudhub.io" />
 	<global-property doc:name="Global Property" name="request.api.port" value="8080" />
 
 	<global-property doc:name="Global Property" name="listener.tls.password" value="changeit" />
 	<global-property doc:name="Global Property" name="listener.tls.key.password" value="changeit" />
 	<global-property doc:name="Global Property" name="listener.host" value="0.0.0.0" />
 
-	<global-property doc:name="Global Property" name="my.CLIENT_ID" value="x" />
-	<global-property doc:name="Global Property" name="my.CLIENT_PW" value="x" />
+	<global-property doc:name="Global Property" name="my.CLIENT_ID" value="a244b9899169431f9b1320decae7d455" />
+	<global-property doc:name="Global Property" name="my.CLIENT_PW" value="D5086f44018B4243969ab0E0A48F9943" />
 
 	<configuration-properties doc:name="Configuration properties" file="common.properties" />
 	<configuration-properties doc:name="Configuration properties" file="${mule.env}-config.properties" />

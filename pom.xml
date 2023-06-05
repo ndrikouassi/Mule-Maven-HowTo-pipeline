@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-<!-- Experience API from blog-exp-api template -->
+	<!-- Experience API from blog-exp-api template -->
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>50228d0d-2c1f-4548-9c8a-90c0ebb480b3</groupId>
-	<artifactId>Mule-Maven-HowTo-pipeline</artifactId>
+	<groupId>66c1049c-ed5c-4f46-9751-33061eb2ce2b</groupId>
+	<artifactId>Mule-Maven-HowTo-pipeline-api</artifactId>
 	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
@@ -25,11 +25,10 @@
 		<anypoint.monitoring.suffix/>
 		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
 		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 
 		<ch.workers>1</ch.workers>
 		<ch.workerType>MICRO</ch.workerType>
-				
 	</properties>
 
 	<build>
@@ -51,8 +50,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<classifier>mule-application</classifier>
-					<sharedLibraries>
-					</sharedLibraries>
+					<sharedLibraries/>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -84,7 +82,6 @@
 	</dependencies>
 
 	<profiles>
-		
 		<!-- Profiles for Dedicated Load Balancer-->
 		<profile>
 			<id>public-lb</id>
@@ -183,7 +180,7 @@
 										</cpu>
 										<memory>
 											<reserved>${rtf.memoryReserved}</reserved>
-<!-- 											<limit>${rtf.memoryLimit}</limit> -->
+											<!-- 											<limit>${rtf.memoryLimit}</limit> -->
 										</memory>
 									</resources>
 									<http>
@@ -275,5 +272,13 @@
 		<url>git@github.com:xxx/${project.artifactId}</url>
 		<developerConnection>scm:git:ssh://git@github.com/xxx/${project.artifactId}.git</developerConnection>
 		<tag>HEAD</tag>
-	</scm>  
+	</scm>
+	<repositories>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange V3</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 </project>
